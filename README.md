@@ -5,7 +5,7 @@ what my code does
 - No coding needed
 - Fast way to get your own automatic bot
 - But not does much
-How to use
++How to use
 - Write your bot name and click enter button
 - Write your link by format eq: example.com and Click enter button
 - Chosses Click or Write Mode
