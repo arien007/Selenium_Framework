@@ -84,9 +84,7 @@ Welcome to the **Automatic Bot Application**! This project is a PySide6-based GU
 Feel free to fork this repository and
 submit pull requests. Contributions are
 welcome!
-### License
-This project is licensed under the MIT
-License. See the LICENSE file for details
+
 ### Contact
 For any questions or feedback, please
 contact tinasora5553@gmail.com
