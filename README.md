@@ -51,13 +51,13 @@ Welcome to the **Automatic Bot Application**! This project is a PySide6-based GU
 1. Clone the repository:
    ```bash
    git clone  https://github.com/arien007/Selenium_Framework.git
-   cd automatic-bot
+   cd Selenium_Framework
 2. Install dependencies:
    ```bash
-   pip install -r requirements .txt
+   pip install -r requirements.txt
 3. Run the application:
    ```bash
-   python hello. py
+   python main.py
 
 ## Using the Application
 1. Input Application Name:
