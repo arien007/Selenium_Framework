@@ -53,25 +53,27 @@ Welcome to the **Automatic Bot Application**! This project is a PySide6-based GU
    git clone  https://github.com/arien007/Selenium_Framework.git
    cd automatic-bot
 2. Install dependencies:
-   ```pip install -r requirements .txt
+   ```bash
+   pip install -r requirements .txt
 3. Run the application:
-   ```python hello. py
+   ```bash
+   python hello. py
 
-Using the Application
+## Using the Application
 1. Input Application Name:
-  0 Enter the name of your application in the "Name" field.
+ Enter the name of your application in the "Name" field.
 2. Input Browser Link:
-  0 Enter the URL of the website you want to automate in the "Browser" field.
+    Enter the URL of the website you want to automate in the "Browser" field.
 3. Add XPaths:
-  0 Enter the XPath of the web element in the "Add" field.
-  0 Choose between "Click" or "Write" modes to specify the action.
+    Enter the XPath of the web element in the "Add" field.
+    Choose between "Click" or "Write" modes to specify the action.
 4. Generate Script:
-  0 Click the "Ready" button to generate the automation script.
-  0 The script will be saved to text_output_pyside6.py .
+    Click the "Ready" button to generate the automation script.
+    The script will be saved to text_output_pyside6.py .
 5. Run Automation:
-  0 Open the generated script and execute it to perform the automation.
+    Open the generated script and execute it to perform the automation.
    Example
-Here's an example of how to use the application:
+## Here's an example of how to use the application:
 1. Enter "MyApp" in the "Name" field.
 2. Enter "https://example.com" in the "Browser" field.
 3. Add an XPath (e.g., submit' ] ) in the "Add" field.
