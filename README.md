@@ -51,7 +51,7 @@ Welcome to the **Automatic Bot Application**! This project is a PySide6-based GU
 1. Clone the repository:
    ```bash
    git clone  https://github.com/arien007/Selenium_Framework.git
-   cd Selenium_Framework
+   cd automatic-bot
 2. Install dependencies:
    ```bash
    pip install -r requirements .txt
@@ -75,11 +75,21 @@ Welcome to the **Automatic Bot Application**! This project is a PySide6-based GU
    Example
 ## Here's an example of how to use the application:
 1. Enter "MyApp" in the "Name" field.
-2. Enter "https://example.com" in the "Browser" field.
-3. Add an XPath (e.g., submit' ] ) in the "Add" field.
+2. Enter "example.com" in the "Browser" field.
+3. Add an XPath (e.g., /html/body/div[1]/.../div[1]/form/div[5]/a ) in the "Add" field.
 4. Select "Click" mode and click "Add".
 5. Click "Ready" to generate the script.
 6. Open text_output_pyside6.py to view the generated script.
+### Contributing
+Feel free to fork this repository and
+submit pull requests. Contributions are
+welcome!
+### License
+This project is licensed under the MIT
+License. See the LICENSE file for details
+### Contact
+For any questions or feedback, please
+contact tinasora5553@gmail.com
 
-
+This README is designed to help users understand your project, its purpose, and how to use it effectively. It also includes tags to improve discoverability.
    
