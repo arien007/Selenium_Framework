@@ -1,5 +1,5 @@
 import sys
-
+import os
 from os import system
 from xmlrpc.client import boolean
 from PySide6.QtGui import *
@@ -34,8 +34,7 @@ with open("text_output_pyside6.py","w") as f:
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Automatic bot*")
-        self.resize(1000,900)
+
         self.setupwidget()
         self.Click = []
         self.Write = []
@@ -100,11 +99,20 @@ class MainWindow(QMainWindow):
         self.lineeditInput.move(200,280)
         
     def setupwidget(self):
+        
+        script_path = os.path.abspath(__file__)
+        script_dir = (os.path.dirname(script_path)  + "/Screenshot_2025-03-19_125716.ico")
+        
         #setup the widget
+        self.setWindowTitle("Automatic bot*")
+        self.resize(1000, 900)
+        self.setMinimumSize(1000, 400)
+        
         central = QWidget()
         self.setCentralWidget(central)
         central.setStyleSheet("background-color: rgb(59, 58, 61);")
-        self.setWindowIcon(QIcon("Screenshot_2025-03-19_125716.ico"))
+        # path = os.path.join(os.getcwd(), "Screenshot_2025-03-19_125716.ico")
+        self.setWindowIcon(QIcon(script_dir))
         self.setLayout(None)
     
     def return_pressed_without_deleted_App(self):
@@ -114,12 +122,13 @@ class MainWindow(QMainWindow):
             self.buttonApp.setText("✅")
             
     def return_pressed_without_deleted_Link(self):
-        #click was set
+        #click was det
         textLink = self.lineeditLink.text()
         if textLink.strip() :
             self.buttonLink.setText("✅") 
             
     def Ready(self) :
+        
         #save all the output to a file
         if self.lineeditApp.text().strip() and self.lineeditLink.text().strip():
             system('cls')
@@ -129,9 +138,23 @@ class MainWindow(QMainWindow):
             
             print(setup)
             self.Attempt_Run()
-            
+        self.message_box()
+        
+    def message_box(self):
+        msg_box = QMessageBox(self)
+        msg_box.setWindowTitle("Output")
+        msg_box.setText(f"The output has been saved want to open?")
+        msg_box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
+        msg_box.setIcon(QMessageBox.Question)
+        response = msg_box.exec()
+        path = os.path.join(os.getcwd(), "text_output_pyside6.py")
+        print(os.getcwd())
+        url = QUrl.fromLocalFile(path)
+        if response == QMessageBox.Yes:
+            QDesktopServices.openUrl(url)
 
-                
+            
+                   
     def AddXpath(self):
         #This function is to chooses between click or write
         
