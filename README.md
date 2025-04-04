@@ -1,16 +1,16 @@
 # Automatic Bot Application
 
-Welcome to the **Automatic Bot Application**! This project is a PySide6-based GUI application designed to automate browser interactions using Selenium. It allows users to input application names, browser links, and XPaths for automation tasks, making it a powerful tool for automating repetitive web tasks.
+Welcome to the **Automatic Bot Application**! This project is a GUI application built with PySide6 that automates browser interactions using Selenium. It lets you input application names, browser links, and XPaths to perform automated actions like clicking and typing on web elements.
 
 ---
 
 ## Features
 
-- **User-Friendly GUI**: Built with PySide6, the application provides an intuitive interface for users to interact with.
-- **Browser Automation**: Uses Selenium to automate browser actions like clicking and typing.
+- **User-Friendly Interface**: Built with PySide6, providing an intuitive interface.
+- **Browser Automation**: Uses Selenium to automate browser actions.
 - **Dynamic Input Handling**: Accepts user inputs for application names, browser links, and XPaths.
-- **Output Logging**: Saves automation scripts and logs to a Python file (`text_output_pyside6.py`) for further use.
-- **Customizable Actions**: Supports both "Click" and "Write" actions for web elements.
+- **Output Logging**: Saves automation scripts and logs to a Python file (`text_output_pyside6.py`).
+- **Customizable Actions**: Supports both "Click" and "Write" actions.
 
 ---
 
@@ -21,16 +21,17 @@ Welcome to the **Automatic Bot Application**! This project is a PySide6-based GU
    - Users can input the application name, browser link, and XPaths for automation.
 
 2. **Input Handling**:
-   - The `lineeditApp` and `lineeditLink` fields accept the application name and browser link, respectively.
-   - The `lineeditInput` field accepts XPaths for automation.
+   - The `lineeditApp` field for application name.
+   - The `lineeditLink` field for browser link.
+   - The `lineeditInput` field for XPaths.
 
 3. **Automation**:
-   - Users can toggle between "Click" and "Write" modes using the respective buttons.
-   - The application generates Selenium-based Python scripts for the specified actions.
+   - Toggle between "Click" and "Write" modes.
+   - Generates Selenium-based Python scripts for the specified actions.
 
 4. **Output**:
-   - The generated scripts are saved to `text_output_pyside6.py`.
-   - Users can choose to open the output file directly from the application.
+   - Generated scripts are saved to `text_output_pyside6.py`.
+   - Option to open the output file directly from the application.
 
 ---
 
@@ -44,50 +45,64 @@ Welcome to the **Automatic Bot Application**! This project is a PySide6-based GU
   - `selenium`
   - `pystyle`
   - `undetected_chromedriver`
-- Google Chrome installed on your system
+- Google Chrome installed
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone  https://github.com/arien007/Selenium_Framework.git
+   git clone https://github.com/arien007/Selenium_Framework.git
    cd Selenium_Framework
+   ```
+
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
+   ```
+
 3. Run the application:
    ```bash
    python main.py
+   ```
 
-## Using the Application
-1. Input Application Name:
- Enter the name of your application in the "Name" field.
-2. Input Browser Link:
-    Enter the URL of the website you want to automate in the "Browser" field.
-3. Add XPaths:
-    Enter the XPath of the web element in the "Add" field.
-    Choose between "Click" or "Write" modes to specify the action.
-4. Generate Script:
-    Click the "Ready" button to generate the automation script.
-    The script will be saved to text_output_pyside6.py .
-5. Run Automation:
-    Open the generated script and execute it to perform the automation.
-   Example
-## Here's an example of how to use the application:
+### Using the Application
+
+1. **Input Application Name**:
+   - Enter the name of your application in the "Name" field.
+   
+2. **Input Browser Link**:
+   - Enter the URL of the website you want to automate in the "Browser" field.
+   
+3. **Add XPaths**:
+   - Enter the XPath of the web element in the "Add" field.
+   - Choose between "Click" or "Write" modes to specify the action.
+   
+4. **Generate Script**:
+   - Click the "Ready" button to generate the automation script.
+   - The script will be saved to `text_output_pyside6.py`.
+
+5. **Run Automation**:
+   - Open the generated script and execute it to perform the automation.
+
+### Example
+
+Here's an example of how to use the application:
+
 1. Enter "MyApp" in the "Name" field.
 2. Enter "example.com" in the "Browser" field.
-3. Add an XPath (e.g., /html/body/div[1]/.../div[1]/form/div[5]/a ) in the "Add" field.
+3. Add an XPath (e.g., `/html/body/div[1]/.../div[1]/form/div[5]/a`) in the "Add" field.
 4. Select "Click" mode and click "Add".
 5. Click "Ready" to generate the script.
-6. Open text_output_pyside6.py to view the generated script.
+6. Open `text_output_pyside6.py` to view the generated script.
+
 ### Contributing
-Feel free to fork this repository and
-submit pull requests. Contributions are
-welcome!
+
+Feel free to fork this repository and submit pull requests. Contributions are welcome!
 
 ### Contact
-For any questions or feedback, please
-contact tinasora5553@gmail.com
+
+For any questions or feedback, please contact [tinasora5553@gmail.com](mailto:tinasora5553@gmail.com).
+
+---
 
 This README is designed to help users understand your project, its purpose, and how to use it effectively. It also includes tags to improve discoverability.
-   
